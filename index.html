@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Blogs</title>
+    <!-- import css file -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .text-red {
+            color: red;
+        }
+    </style>
+    <!-- import css file -->
+</head>
+
+<body>
+
+    <!-- import javarscript -->
+    <!-- npm include -->
+    <!-- <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""
+                loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/service.html">Service</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/customer.html">Customer</a>
+                </li>
+            </li><li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- end-navbar  -->
+    <!-- start slider  -->
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+                <img src="assets/images/slider/bg1.jpg" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="assets/images/slider/bg2.jpg" class="d-block w-100" alt="slider2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider/bg3.jpg" class="d-block w-100" alt="slider3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- end slicer -->
+    <!-- start news section  -->
+        <div class="container">
+            <div class="row title-section">
+               <div class="col">
+                   <h4>ຂໍ້ມູນຂ່າວສານ</h4>
+               </div>
+            </div>
+           <div class="row">
+               <div class="col-lg-3 col-lg-3 col-sm-12">
+                   <div class="card">
+                       <img src="assets/images/blog/author.png" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title">News title</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       </div>
+                       <div class="card-body">
+                         <a href="/blog/blog-detail.html" class="card-link">Read more</a>
+                       </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-lg-3 col-sm-12">
+                   <div class="card">
+                       <img src="assets/images/blog/cmnt-3.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title">Some quick example</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       </div>
+                       <div class="card-body">
+                         <a href="/blog/blog-detail.html" class="card-link">Read more</a>
+                       </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-lg-3 col-sm-12">
+                   <div class="card">
+                       <img src="assets/images/blog/cmnt-1.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title">Card title</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       </div>
+                       <div class="card-body">
+                         <a href="/blog/blog-detail.html" class="card-link">Read more</a>
+                       </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-lg-3 col-sm-12">
+                   <div class="card">
+                       <img src="assets/images/blog/cmnt-2.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title">Card title</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       </div>
+                       <div class="card-body">
+                         <a href="/blog/blog-detail.html" class="card-link">Card link</a>
+                       </div>
+                  </div>
+               </div>
+           </div>
+       </div>
+<!-- end news section  -->
+<!-- start news section  -->
+<div class="service-section">
+  <div class="container">
+    <div class="row title-section">
+       <div class="col">
+        <i class="fas fa-servicestack"></i>
+           <h4>ການບໍລິການ</h4>
+       </div>
+    </div>
+   <div class="row">
+       <div class="col-lg-3 col-lg-3 col-sm-12">
+           <div class="card service">
+               <img src="assets/images/blog/blog_1.jpg" class="card-img-top is-rounded" alt="...">
+               <div class="card-body">
+                <a href="/blog/blog-detail.html">
+                  <h5 class="card-title">Computer Hardware</h5>
+                </a>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+          </div>
+       </div>
+       <div class="col-lg-3 col-lg-3 col-sm-12">
+           <div class="card service">
+               <img src="assets/images/blog/blog_2.jpg" class="card-img-top is-rounded" alt="...">
+               <div class="card-body">
+               <a href="/blog/blog-detail.html">
+                <h5 class="card-title">Computer Network</h5>
+               </a>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+          </div>
+       </div>
+       <div class="col-lg-3 col-lg-3 col-sm-12">
+           <div class="card service">
+               <img src="assets/images/blog/blog_3.jpg" class="card-img-top is-rounded" alt="...">
+               <div class="card-body">
+                <a href="/blog/blog-detail.html">
+                  <h5 class="card-title">Mobile Application</h5>
+                </a>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+          </div>
+       </div>
+       <div class="col-lg-3 col-lg-3 col-sm-12">
+           <div class="card service">
+               <img src="assets/images/blog/blog_4.jpg" class="card-img-top is-rounded" alt="...">
+               <div class="card-body">
+                 <a href="/blog/blog-detail.html"><h5 class="card-title">Computer Software</h5></a>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               </div>
+          </div>
+       </div>
+   </div>
+  </div>
+</div>
+<!-- end news section  -->
+<!-- start subcribe -->
+  <div class="container">
+    <div class="row title-section">
+     <div class="col">
+      <h4 class="text-center">ສອບຖາມຂໍ້ມູນເພີ່ມເຕີມ</h4>
+     </div>
+    </div>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ut eum iusto nihil itaque dolorem enim nam animi in ex.</p>
+    <div class="contact-form">
+      <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" name="name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Last Name</label>
+                    <input type="text" class="form-control" id="inputPassword4" name="last_name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Email</label>
+                  <input type="text" class="form-control" id="inputAddress" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Message</label>
+                  <textarea  class="form-control" rows="4" id="inputAddress" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Confirm
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+              </form>
+        </div>
+    </div>
+    </div>
+  </div>
+<!-- end subcribe  -->
+
+     <footer>
+       <div class="footer">
+        <div class="container">
+            <div class="copy-right">
+                <p class="text-center">2020 <span>&#169;</span> Copyright</p>
+            </div>
+        </div>
+       </div>
+             <!-- donlwoad include  -->
+    <script src="assets/jquery/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- import javarscript -->
+     </footer>
+</body>
+</html>
