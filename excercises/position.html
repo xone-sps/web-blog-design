@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Positon</title>
+</head>
+<style>
+.static {
+  position: static;
+  border: 3px solid #73AD21;
+  margin: 20px;
+  padding: 20px;
+}
+.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+.parent{
+position: relative;
+border: 2px solid green;
+height: 400px;
+width: 400px;
+padding: 30px;
+    }
+    .child1{
+        position: absolute;
+        border: 2px solid red;
+        height: 130px;
+        width: 130px;
+        top: 0;
+        left: 0;
+    }
+    .child2{
+        position: absolute;
+        border: 2px solid red;
+        height: 130px;
+        width: 130px;
+        background: #544;
+        bottom: 0;
+        right: 0;
+    }
+.fixed{
+    position: fixed;
+    border: 3px solid #73a;
+    /* top: 0; */
+    bottom: 0;
+    width: 300px;
+    height: 20px;
+}
+.sticky{
+    position: sticky;
+    border: 3px solid #784;
+    top: 0;
+    left: 0;
+}
+</style>
+<body>
+
+    <h1>CSS Position Static</h1>
+    <div class="static">
+        <h1>Static</h1>
+    </div>
+
+    <div class="static">
+        <h1>Static</h1>
+    </div>
+
+    <h1>CSS Position Relative</h1>
+    <div class="relative">
+        <h1>Relative</h1>
+    </div>
+
+    <h1>CSS Position</h1>
+    <div class="parent">
+        <p>Relative</p>
+        <div class="child1">
+             <h1>Absolute</h1>
+        </div>
+        <div class="child2">
+            <h1>Absolute</h1>
+       </div>
+    </div>
+
+    <h1>CSS Fixed</h1>
+    <div class="fixed">
+       <h1>Fixed</h1>
+    </div>
+    <h1>CSS Sticky</h1>
+    <div class="fixed">
+       <h1>Sticky</h1>
+    </div>
+
+</body>
+</html>

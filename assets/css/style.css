@@ -1,6 +1,20 @@
 h1,h2,h3,h4,h5,h6,body{
     font-family: 'BoonBaan';
 }
+ul{
+    list-style: none;
+}
+.navbar{
+    padding: 14px 20px;
+    /* -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);  */
+    /* box-shadow: 0px 5px 6px -7px #000000, 5px 5px 5px 5px rgba(0,0,0,0); */
+    border: 2px solid #eee;
+    font-size: 18px;
+}
+.active>.nav-link{
+    color: #044FB4 !important;
+}
+
 .title-section{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -25,22 +39,10 @@ h1,h2,h3,h4,h5,h6,body{
     /* height: 420px; */
     vertical-align: center;
 }
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    min-height: 220px;
-    background-color: #eee;
-    position: relative;
-    color: #000;
-    text-align: center;
-  }
-  .copy-right{
-      top: 50%;
-      left: 40%;
-      position: absolute;
-      text-align: center;
-  }
+.carousel-item img{
+    height: 550px;
+}
+
   .contact-form{
       padding: 20px 30px;
       border:1px solid #eee;
@@ -50,22 +52,27 @@ h1,h2,h3,h4,h5,h6,body{
   .tb-customer{
    padding: 30px 10px;
   }
+
   .service-section{
       background-color: #F8F9FA;
   }
   .card.service{
       cursor: pointer;
-      box-shadow: 1px 3px 4px(145,222,345,0.8);
-      box-shadow: 0 10px 15px 0 rgba(9,9,16,.15);
+      box-shadow: 0 5px 8px 0 rgba(9,9,16,.10);
       border: none;
   }
+.card.service .is-rounded{
+    border-radius: 50%;
+    padding: 30px;
+    max-height: 260px;
+    max-width: 260px;
+}
+   .service .box{
+       text-align: center;
+   }
   .card.service:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 15px 0 rgba(9,9,16,.15);
-  }
-  .card.service .is-rounded{
-      border-radius: 50%;
-      padding: 20px 30px;
   }
   .card.service a{
       text-decoration: none;
@@ -81,4 +88,32 @@ h1,h2,h3,h4,h5,h6,body{
 }
 .address li{
     list-style: none;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 220px;
+    background-color: #eee;
+    color: #000;
+    padding: 30px 0px;
+  }
+  .footer a{
+      color: #000;
+  }
+  li>a>i{
+      font-size: 28px;
+      padding-right: 8px;
+  }
+  .footer a:hover{
+      color: #044FB4;
+      text-decoration: none;
+  }
+  .copy-right{
+      text-align: center;
+  }
+@media(max-width:768px){
+    .carousel-item img{
+        height: 350px;
+    }
 }
